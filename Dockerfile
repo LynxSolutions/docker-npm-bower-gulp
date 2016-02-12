@@ -3,7 +3,7 @@ FROM node:slim
 MAINTAINER Nimrod Nagy <nimrod.nagy@lynxsolutions.eu>
 
 # Install git
-RUN apt-get update && apt-get install -y git php
+RUN apt-get update && apt-get install -y git rsync
 
 # Global install gulp and bower
 RUN npm install -g gulp grunt bower && \
