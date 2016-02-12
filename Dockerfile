@@ -1,5 +1,5 @@
 # Pull base image.
-FROM node:slim
+FROM node:0.12.9-slim
 MAINTAINER Nimrod Nagy <nimrod.nagy@lynxsolutions.eu>
 
 # Install git
