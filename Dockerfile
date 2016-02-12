@@ -6,7 +6,7 @@ MAINTAINER Nimrod Nagy <nimrod.nagy@lynxsolutions.eu>
 RUN apt-get update && apt-get install -y git rsync
 
 # Global install gulp and bower
-RUN npm install -g gulp grunt bower && \
+RUN npm install -g gulp grunt bower phantomjs && \
     echo '{ "allow_root": true }' > /root/.bowerrc
 
 # Binary may be called nodejs instead of node
